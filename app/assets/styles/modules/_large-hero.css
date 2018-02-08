@@ -1,0 +1,36 @@
+
+.large-hero {
+
+	position: relative;
+
+	&__text-content {
+
+		position: absolute;
+		top: 50%;
+		/*translate sposta l elemento sull asse verticale in base a una percentuale che al 100% e la sua altezza, quindi in questo caso 
+		lo sposta di meta` dell altezza verso l alto*/
+		transform: translateY(-50%);
+		left: 0;	
+		width: 100%;
+		text-align: center;
+	}
+
+	&__title {
+
+		font-weight: 300;
+		color: #2f5572;
+		font-size: 4.8rem;
+	}
+
+	&__subtitle {
+
+		font-weight: 300;
+		color: #2f5572;
+		font-size: 2.9rem;
+	}
+
+
+}
+
+
+
