@@ -17,11 +17,6 @@ img {
 	box-sizing: border-box;
 }
 
-
 a {
-
-	color: blue;	
-
+	color: $mainOrange;
 }
-
-

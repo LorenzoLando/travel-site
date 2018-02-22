@@ -10,11 +10,18 @@
 	&--gutters > div {
 
 		padding-right: 65px;
-		box-sizing: border-box;
+		
+	}
 
+	&__b-margin-until-medium {
+		margin-bottom: 1rem;
 	}
 
 	@mixin atMedium {
+
+			&__b-margin-until-medium {
+			margin-bottom: 0;
+			}
 
 			&__medium-4 {
 			float: left;
@@ -30,7 +37,7 @@
 
 
 			&__medium-8 {
-				float: right;
+				float: left;
 				width: 66.66%;
 			}
 

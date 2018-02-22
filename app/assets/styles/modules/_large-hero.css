@@ -27,8 +27,9 @@
 
 		font-weight: 300;
 		color: $mainBlue;
-		font-size: 2.4rem;
 		margin: 0;
+		font-size: 2.4rem;
+		
 
 		@mixin atSmall {
 
@@ -54,7 +55,7 @@
 	}
 
 	&__description {
-		color: white;
+		color: #FFF;
 		font-size: 1.1rem;
 		font-weight: 100;
 		text-shadow: 2px 2px 0 rgba(0, 0, 0, .1);
