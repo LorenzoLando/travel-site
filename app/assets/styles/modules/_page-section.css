@@ -8,9 +8,31 @@
 
 		}
 
+	&--no-b-padding-until-medium {
+		padding-bottom: 0;
+
+		@mixin atMedium {
+			padding-bottom: 4.5rem;
+		}
+	}
+
 	&--blue {
 
 		background-color: $mainBlue;
 		color: #FFF;
+	}
+
+	&--testimonials {
+
+		/*questo e il colore che viene applicato per la versione mobile pqe quella da medium ce l immagine*/
+		background-color: #e0e6ef;
+
+		@mixin atMedium {
+			/*inquestio caso aggiungo le regole per l immagine nella stessa regola*/
+			background: url('/assets/images/testimonials-bg.jpg') top center no-repeat;
+			/*l-immagine deve sempre coprire tutta la superficie*/
+			background-size: cover;	
+		}
+		
 	}
 }

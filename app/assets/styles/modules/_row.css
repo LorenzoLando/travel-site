@@ -2,6 +2,10 @@
 	
 	@mixin clearfix;
 
+	&--t-padding {
+		padding-top: 80px;
+	}
+
 	&--gutters {
 
 		margin-right: -65px;
@@ -9,6 +13,10 @@
 
 	&--gutters-large {
 		margin-right: -100px;
+	}
+
+	&--gutters-small {
+		margin-right: -45px;
 	}
 	
 	&--gutters > div {
@@ -18,6 +26,10 @@
 
 	&--gutters-large > div {
 		padding-right: 100px;
+	}
+
+	&--gutters-small > div {
+		padding-right: 45px;
 	}
 
 	&__b-margin-until-medium {
@@ -59,5 +71,17 @@
 			}
 	}
 
+/*Begin equal height rule*/
+
+&--equal-height-at-medium {
+	@mixin atMedium {
+		display: flex;
+	}
+/*& seleziona tutto il precedente selezionatore > div indica che seleziona tutti i figli diretti che hanno tag div*/
+	& > div {
+		float: none;
+		display: flex;
+	}
+}
 	
 }
